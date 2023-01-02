@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/research"
+        android:title="Tìm kiếm"
+        android:id="@+id/search"/>
+    <item android:id="@+id/active"
+        android:title="Hoạt Động"
+        android:icon="@drawable/active"/>
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"/>
+
+
+</menu>

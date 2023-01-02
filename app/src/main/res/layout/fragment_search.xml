@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/custome_navigation_top"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtSearchNumberPhone"
+            android:background="@drawable/custome_edit_text_search"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:inputType="number"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="20dp"
+            android:hint="Nhập số điện thoại"/>
+
+        <ImageView
+            android:id="@+id/imgViewSearch"
+            android:layout_width="40dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/search" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgViewSearchHinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+             />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=""
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:id="@+id/txtSerchHoTen"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iconSearchAddress"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                 />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="24dp"
+                android:id="@+id/txtSearchDiaChi"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

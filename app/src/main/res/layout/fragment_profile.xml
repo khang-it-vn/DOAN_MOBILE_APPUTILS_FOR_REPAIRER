@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/custome_attribute_row_profile"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="354dp"
+            android:layout_height="186dp"
+            app:srcCompat="@drawable/profile"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="37dp" />
+        <TextView
+            android:id="@+id/txtProfileHoTen"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyễn Hoàng Khang"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:gravity="center"
+       android:paddingLeft="10dp"
+       android:background="@drawable/custome_attribute_row_profile"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           app:srcCompat="@drawable/phone"
+           tools:layout_editor_absoluteX="28dp"
+           tools:layout_editor_absoluteY="37dp" />
+
+       <TextView
+           android:id="@+id/txtProfileNumberPhone"
+           android:paddingLeft="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:paddingTop="5dp"
+           android:text="0987546775"
+           />
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:background="@drawable/custome_attribute_row_profile"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/gender"
+
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="37dp" />
+        <TextView
+            android:id="@+id/txtProfileGioiTinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="Nam"
+            />
+    </LinearLayout>
+   <LinearLayout
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:gravity="center"
+       android:paddingLeft="10dp"
+       android:background="@drawable/custome_attribute_row_profile"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           app:srcCompat="@drawable/birthday"
+           tools:layout_editor_absoluteX="28dp"
+           tools:layout_editor_absoluteY="37dp" />
+       <TextView
+           android:id="@+id/txtProfileDOB"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:paddingLeft="15dp"
+           android:paddingTop="5dp"
+           android:text="11/12/1999"
+           />
+   </LinearLayout>
+   <LinearLayout
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:gravity="center"
+       android:paddingLeft="10dp"
+       android:background="@drawable/custome_attribute_row_profile"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           app:srcCompat="@drawable/mail"
+           tools:layout_editor_absoluteX="28dp"
+           tools:layout_editor_absoluteY="37dp" />
+       <TextView
+           android:id="@+id/txtProfileEmail"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:paddingTop="5dp"
+           android:paddingLeft="15dp"
+           android:text="nguyenhoangkhangnsc19@gmail.com"
+           />
+   </LinearLayout>
+   <LinearLayout
+       android:paddingTop="10dp"
+       android:paddingBottom="10dp"
+       android:gravity="center"
+       android:paddingLeft="10dp"
+       android:background="@drawable/custome_attribute_row_profile"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           app:srcCompat="@drawable/address"
+           tools:layout_editor_absoluteX="28dp"
+           tools:layout_editor_absoluteY="37dp" />
+       <TextView
+           android:id="@+id/txtProfileDiaChi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:paddingTop="5dp"
+           android:paddingLeft="15dp"
+           android:text="1502 Nguyễn Duy Trinh Phường Long Trường, Quận 9, Hồ Chí Minh"
+           />
+   </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
