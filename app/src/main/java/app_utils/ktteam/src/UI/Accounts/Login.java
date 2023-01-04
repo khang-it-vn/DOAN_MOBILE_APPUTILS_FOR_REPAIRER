@@ -94,7 +94,10 @@ public class Login extends AppCompatActivity {
                     startActivity(intent);
                     return;
                 }
-                txtErrorLogin.setText(ERROR_LOGIN_MESSAGE);
+                else
+                {
+                    txtErrorLogin.setText(ERROR_LOGIN_MESSAGE);
+                }
             }
 
             @Override
@@ -126,6 +129,9 @@ public class Login extends AppCompatActivity {
             FilesUtil.saveInformation(data.getEmail(),openFileOutput(FilesUtil.EMAIL, Context.MODE_PRIVATE));
             FilesUtil.saveInformation(data.getAvatar() ,openFileOutput(FilesUtil.AVATAR,Context.MODE_PRIVATE));
             FilesUtil.saveInformation(data.isTrangThaiHoatDong() ? "true":"false" ,openFileOutput(FilesUtil.TRANGTHAIHOATDONG,Context.MODE_PRIVATE));
+
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

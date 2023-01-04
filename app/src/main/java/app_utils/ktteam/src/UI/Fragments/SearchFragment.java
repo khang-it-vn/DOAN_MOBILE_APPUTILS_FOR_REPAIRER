@@ -15,11 +15,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import app_utils.ktteam.src.ENVIROMENT;
 import app_utils.ktteam.src.Apis.IApiService;
-import app_utils.ktteam.src.Apis.Prototypes.DataUserApiResponse;
 import app_utils.ktteam.src.Apis.Prototypes.DataUserLatLngApiResponse;
 import app_utils.ktteam.src.Data.User;
 import app_utils.ktteam.src.R;
+import app_utils.ktteam.src.Utils.LoadImageService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -82,7 +83,7 @@ public class SearchFragment extends Fragment {
         }
         IApiService.api.lookupUser(sdt).enqueue(new Callback<DataUserLatLngApiResponse>() {
             @Override
-            public void onResponse(Call<DataUserLatLngApiResponse> call, Response<DataUserLatLngApiResponse> response) {
+        public void onResponse(Call<DataUserLatLngApiResponse> call, Response<DataUserLatLngApiResponse> response) {
                 DataUserLatLngApiResponse res = response.body();
                 if(res != null && res.isSuccess() )
                 {
@@ -105,7 +106,8 @@ public class SearchFragment extends Fragment {
         txtSerchHoTen.setText(data.getHoTen());
         txtSearchDiaChi.setText(data.getDiaChi());
         imgAddress.setImageResource(R.drawable.address);
-        imgviewSearchHinhAnh.setImageResource(R.drawable.man);
+
+        LoadImageService.loadImageFor(new LoadImageService(imgviewSearchHinhAnh, ENVIROMENT.DOMAIN_GET_IMAGE,data.getAvatar()));
     }
 
     private boolean checkInfomation(String soDienThoai) {

@@ -8,7 +8,9 @@ import java.util.UUID;
 import app_utils.ktteam.src.Apis.Prototypes.DataRepairerApiResponse;
 import app_utils.ktteam.src.Apis.Prototypes.DataUserApiResponse;
 import app_utils.ktteam.src.Apis.Prototypes.DataUserLatLngApiResponse;
+import app_utils.ktteam.src.Apis.Prototypes.ObjectByteImage;
 import app_utils.ktteam.src.Models.RepairerModel;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -38,5 +40,10 @@ public interface IApiService {
     // Tìm kiếm thông tin user bằng số điện thoại
     @GET("Repairer/InformationUser")
     Call<DataUserLatLngApiResponse> lookupUser(@Query("soDienThoai") String soDienThoai);
+
+    // Lấy hình ảnh
+    @GET("Repairer/GetImageByName")
+    Call<ObjectByteImage> fetchImage(@Query("imageName") String imageName);
+
 
 }
